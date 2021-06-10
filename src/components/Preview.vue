@@ -25,15 +25,16 @@
             v-for="item in list.items"
             :key="item.color"
             :class="{ wrapper: list.randomColors }"
-            class="section-preview-items-colors"
           >
-            <div
-              @click.self="removeItem(item)"
-              v-for="(color, index) in Number(item.number)"
-              :key="index"
-              :style="{ background: item.color }"
-              class="item-color"
-            ></div>
+            <div class="section-preview-items-colors" v-if="item.checked">
+              <div
+                @click.self="removeItem(item)"
+                v-for="(color, index) in Number(item.number)"
+                :key="index"
+                :style="{ background: item.color }"
+                class="item-color"
+              ></div>
+            </div>
           </div>
         </div>
         <!-- Реализация перемешивания -->
