@@ -2,6 +2,7 @@
 
 ## Project setup
 ```
+node v12
 npm install
 ```
 
