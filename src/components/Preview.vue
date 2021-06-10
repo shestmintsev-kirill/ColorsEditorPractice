@@ -10,7 +10,11 @@
         <button
           class="section-preview-items-name-btn"
           :class="{ btnDisabled: !list.listShow }"
-          @click="list.randomColors = !list.randomColors"
+          @click="
+            list.listShow
+              ? (list.randomColors = !list.randomColors)
+              : list.randomColors
+          "
         >
           Перемешать
         </button>

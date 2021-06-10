@@ -142,6 +142,8 @@ export default {
 .inner {
   display: flex;
   justify-content: space-between;
+  max-width: 945px;
+  margin: 0 auto;
 }
 
 .section-border {
