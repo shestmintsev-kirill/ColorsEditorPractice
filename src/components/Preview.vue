@@ -16,7 +16,7 @@
               : list.randomColors
           "
         >
-          Перемешать
+          Mix
         </button>
       </div>
       <div v-if="list.listShow">
